@@ -54,7 +54,7 @@ impl<'a> specs::System<'a> for Render {
 
     fn run(&mut self, (collision, camera, colliders): Self::SystemData) {
         let projection = na::Affine2::from_matrix_unchecked(na::Matrix3::new_nonuniform_scaling(
-            &na::Vector2::new(2.0 / self.viewport.width, 2.0 / self.viewport.height),
+            &na::Vector2::new(2.0 / self.viewport.width, -2.0 / self.viewport.height),
         ));
         let viewproj = projection * camera.0.inverse();
 

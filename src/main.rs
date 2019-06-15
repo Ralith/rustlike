@@ -126,7 +126,7 @@ fn main() {
                         let f = window.window.get_hidpi_factor() as f32;
                         state.move_cursor(&(na::Vector2::new(
                             (position.x - window_size.width / 2.0) as f32,
-                            (position.y - window_size.height / 2.0) as f32,
+                            -(position.y - window_size.height / 2.0) as f32,
                         ) * f));
                     }
                     WindowEvent::MouseInput {
