@@ -1,0 +1,16 @@
+[package]
+name = "rustlike"
+version = "0.1.0"
+authors = ["Benjamin Saunders <ben.e.saunders@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+na = { package = "nalgebra", version = "0.18" }
+ash = "0.29"
+vk-shader-macros = "0.2"
+specs = "0.14.3"
+specs-derive = "0.4"
+winit = "0.19"
+ncollide2d = "0.19.2"
+directories = "2.0.1"
