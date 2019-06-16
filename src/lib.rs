@@ -13,5 +13,6 @@ pub mod window;
 pub mod state;
 pub mod sim;
 pub mod render;
+mod navmesh;
 
 pub use defer::defer;
