@@ -193,7 +193,7 @@ impl SwapchainMgr {
     /// Recreate the swapchain based on the window's current capabilities
     ///
     /// # Safety
-    /// - There must be no current or future operations on the swapchain
+    /// - There must be no operations scheduled that access the current swapchain
     pub unsafe fn update(&mut self) {
         self.state = SwapchainState::new(
             self.state.window.clone(),
